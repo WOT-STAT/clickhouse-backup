@@ -19,5 +19,5 @@ services:
       - S3_SECRET_KEY
       - REMOTE_STORAGE=s3
       - WATCH_INTERVAL=24h
-      - FULL_INTERVAL=21d
+      - FULL_INTERVAL=504h
     network_mode: "host"
