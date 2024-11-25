@@ -20,4 +20,6 @@ services:
       - REMOTE_STORAGE=s3
       - WATCH_INTERVAL=24h
       - FULL_INTERVAL=504h
+      - WATCH_BACKUP_NAME_TEMPLATE=prod-{type}-{time:2006-01-02T15-04-05}
+      - CLICKHOUSE_SKIP_TABLES=system.*,Statistics.*,INFORMATION_SCHEMA.*,information_schema.*
     network_mode: "host"
